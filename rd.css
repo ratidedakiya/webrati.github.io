@@ -1,0 +1,171 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+
+
+body
+{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.1)), url();
+	background-size: cover;
+	background-position: center;
+	height: 200vh;
+	text-align: center;
+	
+}
+
+/*home*/
+li a
+{
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	display: inline-block; 
+	padding: 0 25px;
+	font-size: 14px;
+	line-height: 30px;
+	position: relative;
+	z-index: 1;
+
+}
+
+li
+{
+	list-style-type: none;
+	display: inline-block;
+}
+.home2
+{
+	padding-top: 25px;
+}
+nav
+{
+	position: relative;
+	padding: 10px 20px 10px 10px;
+	text-align: right;
+	z-index: 1;
+	background:#333; 
+	margin: 0 auto;
+	width: calc(100%-60px);
+}
+.logo
+{
+	width: 15%;
+	float: left;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 25px;
+	text-align: left;
+	padding-left: 2%;
+}
+.aa li a:hover
+{
+	background-color: tomato;
+	color: #fff;
+}
+nav:before{
+	position: absolute;
+	content: '';
+	left: 0;
+	top: 100%;
+	border-top: 10px solid #333;
+	border-right:10px solid #333;
+	border-left: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+}
+nav:after
+{
+	position: absolute;;
+	content: '';
+	border-top: 10px solid #333;
+	border-left: 10px solid #333;
+	border-right:  10px solid transparent;
+	border-bottom: 10px solid transparent;
+	top: 100%;
+	right: 0;
+}
+.sub-menu
+{
+	display: none;
+}
+.Home ul li:hover .sub-menu 
+{
+	display: block;
+	position:absolute;
+	background-color: #333;
+	margin-top: 0;
+	margin-left: -15px;
+
+}
+.Home ul li:hover .sub-menu  ul li
+{
+	display: block;
+	margin: 10px;
+}
+.Home ul li:hover .sub-menu  ul li
+{
+	width: 250spx;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-bottom: transparent;
+	border-radius: 0;
+	text-align: left;
+
+}
+.Home ul li:hover .sub-menu  ul li:last child
+{
+	border-bottom: none;
+}
+.home2 .fa
+{
+	margin-right: 8px;
+}
+/*form*/
+form
+{
+	margin-top: 5opx;
+	transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+	width: 600px;
+	height: 30px;
+	background:transparent;
+	border:none;
+	outline: none;
+	border-bottom: 1px solid gray;
+	color: black;
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+.input
+{
+	height: 45px;
+}
+
+form .submit
+{
+	background:#ff5722;
+	border-color: transparent;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	margin-top: 20px;
+
+}
+form .submit:hover
+{
+	background-color: #f44336;
+	cursor: pointer;
+
+
+}
+/*emoji*/
